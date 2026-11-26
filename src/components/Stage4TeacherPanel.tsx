@@ -1182,10 +1182,10 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 gap-3">
             <div>
               <h3 className="text-base font-bold text-slate-900">
-                Struktur &amp; Bank Soal Matematika TKA ({questions.length} Butir)
+                Struktur &amp; Bank Soal {CONFIG.MATA_PELAJARAN} — {CONFIG.MATERI} ({questions.length} Butir)
               </h3>
               <p className="text-xs text-slate-500">
-                18 Soal Pilihan Ganda, 3 Soal Pilihan Ganda Kompleks, 9 Soal PGK Kategori
+                18 Soal Pilihan Ganda, 3 Soal Pilihan Ganda Kompleks (3 opsi), 9 Soal PGK Kategori (3 pernyataan B/S)
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
@@ -1258,6 +1258,22 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                     </button>
                   </div>
                 </div>
+
+                {q.imageUrl && (
+                  <div className="rounded-lg overflow-hidden border border-slate-200 bg-white max-w-sm">
+                    <img
+                      src={q.imageUrl}
+                      alt={q.imageCaption || q.topic}
+                      referrerPolicy="no-referrer"
+                      className="w-full max-h-44 object-contain mx-auto"
+                    />
+                    {q.imageCaption && (
+                      <div className="px-2.5 py-1 text-[10px] font-semibold text-slate-600 bg-slate-100 border-t border-slate-200">
+                        {q.imageCaption}
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 <p className="text-xs sm:text-sm text-slate-900 font-medium whitespace-pre-line">
                   {q.text}

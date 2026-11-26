@@ -2,7 +2,8 @@ import { Question, QuestionBlueprint, CognitiveLevel, Difficulty } from '../type
 
 /**
  * Data Acuan Matriks Kisi-Kisi Penulisan Soal Tes Sumatif
- * Kurikulum Merdeka - Fase C (Kelas VI) Mata Pelajaran Matematika
+ * Kurikulum Merdeka - Fase C (Kelas VI) Mata Pelajaran IPAS
+ * Lingkup Materi: Komponen Biotik dan Abiotik
  */
 
 export interface BlueprintDefinition {
@@ -13,275 +14,275 @@ export interface BlueprintDefinition {
   bobotSkor: number;
 }
 
-// Peta acuan default 30 butir soal Kurikulum Merdeka
+// Peta acuan default 30 butir soal IPAS (Komponen Biotik dan Abiotik)
 export const DEFAULT_BLUEPRINT_MAP: Record<number, BlueprintDefinition> = {
   1: {
-    elemen: 'Bilangan',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah operasi hitung bilangan bulat negatif dan positif dalam kehidupan sehari-hari.',
+      'Peserta didik dapat menjelaskan pengertian komponen biotik penyusun ekosistem.',
     indikatorSoal:
-      'Disajikan narasi perubahan suhu es yang dipanaskan secara berkala, peserta didik dapat menentukan suhu akhir es setelah waktu pemanasan tertentu.',
+      'Disajikan pertanyaan mengenai penyusun lingkungan, peserta didik dapat menentukan pengertian komponen biotik dengan tepat.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   2: {
-    elemen: 'Bilangan',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah penalaran yang melibatkan operasi hitung campuran pecahan dan bilangan cacah.',
+      'Peserta didik dapat mengidentifikasi berbagai komponen biotik pada gambar ekosistem sawah.',
     indikatorSoal:
-      'Disajikan cerita kontekstual panen beras (kuintal) yang dijual dan dibagi rata ke beberapa tetangga, peserta didik dapat menghitung berat beras yang diterima tiap orang dalam satuan kilogram.',
-    levelKognitif: 'L2',
+      'Disajikan gambar ilustrasi ekosistem sawah, peserta didik dapat memilih kelompok komponen biotik yang tampak pada gambar.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   3: {
-    elemen: 'Bilangan',
+    elemen: 'Komponen Abiotik',
     tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan konsep Faktor Persekutuan Terbesar (FPB) untuk menyelesaikan permasalahan pembagian barang secara merata.',
+      'Peserta didik dapat menjelaskan pengertian komponen abiotik dalam ekosistem.',
     indikatorSoal:
-      'Disajikan data tiga jenis perlengkapan belajar yang akan dibagikan sama banyak kepada siswa berprestasi, peserta didik dapat menentukan jumlah siswa terbanyak penerima dan jumlah pensil yang didapat masing-masing siswa.',
-    levelKognitif: 'L2',
+      'Disajikan pernyataan konseptual tentang penyusun ekosistem, peserta didik dapat menentukan definisi komponen abiotik dengan benar.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   4: {
-    elemen: 'Bilangan',
+    elemen: 'Komponen Abiotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan konsep Kelipatan Persekutuan Terkecil (KPK) dalam menentukan jadwal atau waktu kejadian bersamaan.',
+      'Peserta didik dapat mengelompokkan contoh komponen abiotik di lingkungan sekitar.',
     indikatorSoal:
-      'Disajikan interval waktu berbunyinya tiga lonceng pos kamling pada pukul tertentu, peserta didik dapat menentukan waktu saat ketiga lonceng berbunyi bersamaan kembali untuk kedua kalinya.',
+      'Disajikan empat kelompok daftar benda/unsur lingkungan, peserta didik dapat menentukan kelompok yang seluruhnya merupakan komponen abiotik.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   5: {
-    elemen: 'Aljabar',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat memahami konsep rasio, perbandingan, dan skala pada peta atau denah.',
+      'Peserta didik dapat membedakan komponen biotik dan abiotik pada ekosistem kolam air tawar.',
     indikatorSoal:
-      'Disajikan jarak dua kota pada peta dan skala tertentu, peserta didik dapat menghitung jarak sebenarnya antara kedua kota tersebut dalam satuan kilometer.',
-    levelKognitif: 'L1',
+      'Disajikan gambar ilustrasi ekosistem kolam air tawar, peserta didik dapat menentukan pasangan pengelompokan komponen biotik dan abiotik yang benar.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   6: {
-    elemen: 'Aljabar',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah proporsi dan perbandingan senilai yang berkaitan dengan selisih dan jumlah nilai.',
+      'Peserta didik dapat mengklasifikasikan organisme pengurai (jamur dan bakteri) sebagai komponen biotik.',
     indikatorSoal:
-      'Disajikan perbandingan umur dua orang dan selisih umur mereka, peserta didik dapat menghitung jumlah umur kedua orang tersebut seluruhnya.',
+      'Disajikan narasi pembusukan daun kering oleh jamur dan bakteri di halaman sekolah, peserta didik dapat menentukan klasifikasi komponen ekosistem beserta alasannya.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   7: {
-    elemen: 'Aljabar',
+    elemen: 'Komponen Abiotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan gerak lurus beraturan (kecepatan rata-rata, jarak, dan waktu) untuk kasus berpapasan.',
+      'Peserta didik dapat memilih komponen abiotik dari daftar hasil pengamatan halaman sekolah.',
     indikatorSoal:
-      'Disajikan jarak dua kota, waktu keberangkatan yang sama, dan kecepatan dua kendaraan yang berpapasan, peserta didik dapat menganalisis dan menentukan pukul berapa kedua kendaraan saling berpapasan.',
-    levelKognitif: 'L3',
+      'Disajikan enam daftar temuan komponen lingkungan di halaman sekolah, peserta didik dapat mengidentifikasi nomor yang termasuk komponen abiotik.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   8: {
-    elemen: 'Pengukuran',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah yang melibatkan hubungan antara volume bangun ruang, debit aliran zat cair, dan waktu pengisian.',
+      'Peserta didik dapat menentukan komponen abiotik utama yang menunjang proses fotosintesis tumbuhan hijau.',
     indikatorSoal:
-      'Disajikan ukuran bak penampungan air berbentuk balok dan debit kran air pengisi, peserta didik dapat menghitung waktu yang dibutuhkan untuk mengisi bak hingga penuh.',
-    levelKognitif: 'L2',
+      'Disajikan deskripsi peran tumbuhan hijau sebagai produsen, peserta didik dapat mengidentifikasi komponen abiotik yang diperlukan untuk fotosintesis.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   9: {
-    elemen: 'Geometri',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung keliling lingkaran dan mengaplikasikannya dalam pemecahan masalah lingkungan sekitar.',
+      'Peserta didik dapat menjelaskan pengaruh komponen biotik (cacing tanah) terhadap komponen abiotik tanah.',
     indikatorSoal:
-      'Disajikan diameter sebuah taman berbentuk lingkaran yang akan dipasangi lampu penerangan dengan jarak tertentu, peserta didik dapat menentukan jumlah lampu yang dibutuhkan.',
-    levelKognitif: 'L1',
-    bobotSkor: 1,
-  },
-  10: {
-    elemen: 'Geometri',
-    tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas gabungan bangun datar (persegi panjang dan lingkaran).',
-    indikatorSoal:
-      'Disajikan gambar bangun datar gabungan antara persegi panjang dan setengah lingkaran berimpit, peserta didik dapat menghitung luas gabungan bangun tersebut.',
+      'Disajikan gambar ilustrasi ekosistem kebun sayur beserta cacing tanah, peserta didik dapat menentukan pengaruh aktivitas cacing terhadap kondisi tanah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  11: {
-    elemen: 'Pengukuran',
+  10: {
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis dan menghitung volume bangun ruang tabung serta konversi volume ke satuan liter.',
+      'Peserta didik dapat membedakan karakteristik makhluk hidup (biotik) dan benda tak hidup (abiotik).',
     indikatorSoal:
-      'Disajikan dimensi drum penampung minyak berbentuk tabung yang telah terisi sebagian (pecahan), peserta didik dapat menganalisis sisa volume minyak yang dibutuhkan hingga penuh dalam satuan liter.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  12: {
-    elemen: 'Geometri',
-    tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas permukaan bangun ruang kubus dalam konteks pemecahan masalah sehari-hari.',
-    indikatorSoal:
-      'Disajikan ukuran rusuk sebuah kotak kado berbentuk kubus, peserta didik dapat menentukan luas minimal kertas kado yang dibutuhkan untuk menutup seluruh permukaannya.',
+      'Disajikan perbandingan objek kambing dan batu di padang rumput, peserta didik dapat menentukan alasan ilmiah penggolongan komponen biotik dan abiotik.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
-  13: {
-    elemen: 'Analisis Data dan Peluang',
+  11: {
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan nilai rata-rata (mean) dari sekumpulan data tunggal.',
+      'Peserta didik dapat menganalisis ketergantungan hewan air (biotik) terhadap keberadaan air (abiotik).',
     indikatorSoal:
-      'Disajikan sekumpulan data perolehan nilai ulangan harian siswa, peserta didik dapat menghitung nilai rata-rata (mean) dari data tersebut.',
+      'Disajikan kondisi kekeringan pada ekosistem sungai, peserta didik dapat memprediksi dampak hilangnya komponen abiotik air terhadap populasi ikan.',
+    levelKognitif: 'L2',
+    bobotSkor: 1,
+  },
+  12: {
+    elemen: 'Interaksi Ekosistem',
+    tujuanPembelajaran:
+      'Peserta didik dapat menganalisis dampak perubahan intensitas cahaya dan kelembapan terhadap pertumbuhan tanaman.',
+    indikatorSoal:
+      'Disajikan kasus pemasangan paranet terlalu rapat pada kebun tomat, peserta didik dapat menganalisis dampak perubahan faktor abiotik terhadap pertumbuhan tanaman.',
+    levelKognitif: 'L3',
+    bobotSkor: 1,
+  },
+  13: {
+    elemen: 'Komponen Abiotik',
+    tujuanPembelajaran:
+      'Peserta didik dapat mengidentifikasi komponen abiotik yang terdapat pada ekosistem pantai.',
+    indikatorSoal:
+      'Disajikan gambar ilustrasi ekosistem pantai tropis, peserta didik dapat menentukan daftar komponen abiotik yang tampak pada gambar.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   14: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis data tunggal untuk menentukan nilai median (nilai tengah) dan modus.',
+      'Peserta didik dapat membedakan peran komponen biotik (produsen, konsumen) dengan komponen abiotik.',
     indikatorSoal:
-      'Disajikan data berat badan sejumlah siswa peserta cerdas cermat yang belum berurutan, peserta didik dapat menentukan nilai median dan modus secara tepat.',
+      'Disajikan daftar komponen ekosistem padang rumput, peserta didik dapat menentukan pernyataan yang tepat tentang peran produsen, konsumen, dan komponen abiotik.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   15: {
-    elemen: 'Aljabar',
+    elemen: 'Komponen Abiotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah aritmatika sosial yang berkaitan dengan persentase diskon (potongan harga).',
+      'Peserta didik dapat mengidentifikasi pengaruh komponen abiotik suhu dan kelembapan terhadap habitat tumbuhan lumut.',
     indikatorSoal:
-      'Disajikan harga barang sebelum diskon dan persentase potongan harga belanja pendidikan, peserta didik dapat menghitung jumlah uang yang harus dibayar oleh pembeli.',
-    levelKognitif: 'L1',
+      'Disajikan fenomena tempat tumbuh tumbuhan lumut pada batu teduh dan basah, peserta didik dapat menentukan komponen abiotik yang paling memengaruhinya.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   16: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menyajikan dan menafsirkan data dalam bentuk diagram lingkaran.',
+      'Peserta didik dapat mengidentifikasi hubungan komponen biotik dan abiotik pada taman sekolah.',
     indikatorSoal:
-      'Disajikan diagram lingkaran persentase pilihan kegiatan ekstrakurikuler beserta jumlah total siswa, peserta didik dapat menghitung banyak siswa yang memilih ekstrakurikuler tertentu.',
+      'Disajikan gambar ilustrasi taman sekolah, peserta didik dapat memilih pernyataan yang benar mengenai interaksi komponen biotik dan abiotik.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   17: {
-    elemen: 'Bilangan',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan akar pangkat tiga dari bilangan kubik yang berkaitan dengan volume kubus.',
+      'Peserta didik dapat menganalisis dampak pencemaran komponen abiotik air terhadap kelangsungan hidup komponen biotik.',
     indikatorSoal:
-      'Disajikan volume bak penampungan air berbentuk kubus, peserta didik dapat menentukan panjang rusuk bagian dalam bak tersebut.',
-    levelKognitif: 'L2',
+      'Disajikan kasus pembuangan limbah deterjen ke kolam ikan, peserta didik dapat menyimpulkan keterkaitan kerusakan komponen abiotik terhadap kematian ikan.',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   18: {
-    elemen: 'Pengukuran',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat mengonversi satuan kecepatan dari km/menit ke meter per detik (m/s).',
+      'Peserta didik dapat memilah seluruh komponen biotik dari hasil pengamatan ekosistem sungai.',
     indikatorSoal:
-      'Disajikan jarak tempuh dan waktu seorang pelari maraton cilik, peserta didik dapat menghitung dan mengonversi kecepatan rata-rata ke satuan meter/detik.',
-    levelKognitif: 'L2',
+      'Disajikan catatan hasil pengamatan siswa di ekosistem sungai, peserta didik dapat mengelompokkan daftar komponen yang seluruhnya bersifat biotik.',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   19: {
-    elemen: 'Geometri',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat mengidentifikasi dan membedakan sifat-sifat bangun datar layang-layang melalui pilihan berganda kompleks.',
+      'Peserta didik dapat memverifikasi pengelompokan komponen biotik dan abiotik pada gambar ekosistem kolam.',
     indikatorSoal:
-      'Disajikan tiga deskripsi sifat geometris bangun datar layang-layang, peserta didik dapat memilih semua pernyataan yang benar (lebih dari satu jawaban benar).',
+      'Disajikan gambar ekosistem kolam dan 3 pernyataan pembeda komponen, peserta didik dapat memilih semua pernyataan yang benar (PGK).',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   20: {
-    elemen: 'Geometri',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis luas, keliling, dan estimasi nilai ekonomis lahan kebun berbentuk bangun datar.',
+      'Peserta didik dapat mengevaluasi penggolongan komponen biotik dan abiotik di kebun sekolah.',
     indikatorSoal:
-      'Disajikan ukuran kebun berbentuk persegi panjang dan harga jual per meter persegi, peserta didik dapat mengevaluasi dan memilih semua pernyataan yang bernilai benar.',
-    levelKognitif: 'L3',
+      'Disajikan daftar komponen kebun sekolah dan 3 pernyataan klasifikasi, peserta didik dapat memilih semua pernyataan yang benar (PGK).',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   21: {
-    elemen: 'Bilangan',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan operasi hitung campuran bilangan desimal dan satuan berat dalam belanja sehari-hari.',
+      'Peserta didik dapat menganalisis hubungan timbal balik antara komponen biotik dan abiotik.',
     indikatorSoal:
-      'Disajikan data belanja kebutuhan pokok beras dan gula pasir, peserta didik dapat memverifikasi kebenaran hitungan berat tiap jenis barang dan total berat belanjaan.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  22: {
-    elemen: 'Aljabar',
-    tujuanPembelajaran:
-      'Peserta didik dapat menganalisis konsep aritmatika sosial mengenai bruto, neto, tara, modal, harga jual, dan keuntungan.',
-    indikatorSoal:
-      'Disajikan narasi pembelian buah dalam keranjang berkategori bruto dan tara, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait neto, modal, dan laba.',
+      'Disajikan 3 pernyataan tentang interaksi tumbuhan, cacing tanah, lumut, dan faktor abiotik, peserta didik dapat memilih semua pernyataan yang benar (PGK).',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
-  23: {
-    elemen: 'Analisis Data dan Peluang',
+  22: {
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis tabel distribusi frekuensi data tunggal dan menghubungkannya dengan kriteria ketercapaian (KKTP).',
+      'Peserta didik dapat membedakan komponen biotik dan abiotik pada gambar ekosistem sawah.',
     indikatorSoal:
-      'Disajikan data frekuensi nilai ulangan dan batas KKTP sekolah, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait modus, jumlah siswa tuntas, dan persentase remedial.',
-    levelKognitif: 'L2',
+      'Disajikan gambar ekosistem sawah dan 3 deskripsi pernyataan, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) masing-masing pernyataan.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  23: {
+    elemen: 'Komponen Abiotik',
+    tujuanPembelajaran:
+      'Peserta didik dapat membedakan komponen biotik (termasuk jamur) dan komponen abiotik di lingkungan sekolah.',
+    indikatorSoal:
+      'Disajikan hasil pengamatan halaman sekolah beserta 3 pernyataan, peserta didik dapat menentukan kebenaran (Benar/Salah) klasifikasi komponen ekosistem.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   24: {
-    elemen: 'Pengukuran',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis volume balok dan kapasitas penampungan air dalam satuan liter.',
+      'Peserta didik dapat membedakan komponen biotik dan abiotik serta kebutuhan hidup cacing tanah di kebun sayur.',
     indikatorSoal:
-      'Disajikan dimensi bak penampungan air balok dan kondisi keterisian 3/4 kapasitas, peserta didik dapat menentukan kebenaran (Benar/Salah) untuk volume penuh, volume isi, dan volume air yang perlu ditambahkan.',
+      'Disajikan gambar ekosistem kebun sayur dan 3 pernyataan terkait komponen ekosistem, peserta didik dapat menentukan pilihan Benar atau Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   25: {
-    elemen: 'Geometri',
+    elemen: 'Komponen Biotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan rumus keliling dan luas lingkaran pada objek kontekstual meja hias bundar.',
+      'Peserta didik dapat mengevaluasi ciri pembeda antara komponen biotik dan komponen abiotik.',
     indikatorSoal:
-      'Disajikan diameter meja bundar, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) untuk panjang jari-jari, panjang renda hias keliling, dan luas permukaan kaca penutup.',
+      'Disajikan 3 pernyataan mengenai sifat biologis biotik dan sifat fisik abiotik, peserta didik dapat menentukan kebenaran (Benar/Salah) setiap pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   26: {
-    elemen: 'Aljabar',
+    elemen: 'Komponen Abiotik',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis skala denah untuk menentukan ukuran panjang, lebar, dan luas sebenarnya.',
+      'Peserta didik dapat membedakan komponen biotik dan abiotik pada gambar ekosistem pantai.',
     indikatorSoal:
-      'Disajikan denah lapangan upacara sekolah dengan skala 1 : 400, peserta didik dapat menilai kebenaran (Benar/Salah) dari pernyataan panjang sebenarnya, lebar sebenarnya, dan luas sebenarnya.',
+      'Disajikan gambar ekosistem pantai tropis dan 3 pernyataan identifikasi komponen, peserta didik dapat menilai Benar atau Salah setiap pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   27: {
-    elemen: 'Pengukuran',
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan jarak, waktu tempuh total, waktu istirahat, dan kecepatan gerak murni bus pariwisata.',
+      'Peserta didik dapat menilai hubungan antara ketersediaan oksigen, air, dan suhu dengan makhluk hidup.',
     indikatorSoal:
-      'Disajikan jadwal keberangkatan bus karya wisata, waktu tiba, jarak tempuh, dan durasi istirahat, peserta didik dapat memverifikasi nilai kebenaran (Benar/Salah) pada total waktu, waktu gerak murni, dan kecepatan rata-rata saat melaju.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  28: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan operasi persentase dan pecahan terhadap kuantitas barang persediaan awal.',
-    indikatorSoal:
-      'Disajikan persediaan awal buku tulis di koperasi dan data penjualan hari Senin (persen) dan Selasa (pecahan), peserta didik dapat menentukan kebenaran (Benar/Salah) dari 3 pernyataan penjualan dan sisa stok.',
-    levelKognitif: 'L1',
-    bobotSkor: 1,
-  },
-  29: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan FPB dalam menentukan paket hadiah dan rincian isi barang per regu penerima.',
-    indikatorSoal:
-      'Disajikan jumlah tiga perlengkapan hadiah lomba kebersihan kelas, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) nilai FPB, banyak regu terbanyak penerima, dan komposisi isi barang per regu.',
+      'Disajikan 3 pernyataan tentang peran oksigen, kekeringan, dan suhu lingkungan, peserta didik dapat menentukan kebenaran (Benar/Salah) masing-masing pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  30: {
-    elemen: 'Geometri',
+  28: {
+    elemen: 'Interaksi Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis koordinat Kartesius 4 titik untuk mengidentifikasi bentuk bangun datar, keliling, dan luas.',
+      'Peserta didik dapat mengidentifikasi komponen biotik, abiotik, dan interaksi penyerbukan di taman sekolah.',
     indikatorSoal:
-      'Disajikan 4 titik koordinat bidang Kartesius yang saling dihubungkan, peserta didik dapat menganalisis dan menentukan kebenaran (Benar/Salah) dari jenis bangun datar yang terbentuk, keliling, dan luasnya.',
+      'Disajikan gambar taman sekolah dan 3 pernyataan pengamatan, peserta didik dapat menentukan pilihan Benar atau Salah untuk tiap pernyataan.',
+    levelKognitif: 'L2',
+    bobotSkor: 1,
+  },
+  29: {
+    elemen: 'Komponen Biotik',
+    tujuanPembelajaran:
+      'Peserta didik dapat menganalisis peran komponen biotik pengurai (dekomposer) terhadap kesuburan komponen abiotik tanah.',
+    indikatorSoal:
+      'Disajikan narasi pelapukan daun oleh dekomposer dan 3 pernyataan analisis, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) tiap pernyataan.',
+    levelKognitif: 'L3',
+    bobotSkor: 1,
+  },
+  30: {
+    elemen: 'Interaksi Ekosistem',
+    tujuanPembelajaran:
+      'Peserta didik dapat menganalisis komponen biotik, abiotik, dan ketergantungan kualitas air pada ekosistem akuarium.',
+    indikatorSoal:
+      'Disajikan studi kasus akuarium kelas dan 3 pernyataan pembeda komponen serta dampaknya, peserta didik dapat menentukan Benar atau Salah tiap pernyataan.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
@@ -362,13 +363,13 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
     q.tujuanPembelajaran ||
     (def
       ? def.tujuanPembelajaran
-      : `Peserta didik mampu menerapkan konsep materi ${q.topic} dalam menyelesaikan permasalahan matematika.`);
+      : `Peserta didik mampu membedakan komponen biotik dan abiotik pada materi ${q.topic}.`);
 
   const indikatorSoal =
     q.indikatorSoal ||
     (def
       ? def.indikatorSoal
-      : `Disajikan stimulus masalah tentang ${q.topic}, peserta didik dapat menentukan jawaban yang tepat.`);
+      : `Disajikan stimulus mengenai ${q.topic}, peserta didik dapat menentukan jawaban yang tepat.`);
 
   const bobotSkor = q.bobot || (def ? def.bobotSkor : 1);
 
@@ -390,22 +391,16 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
 
 function inferElemenFromTopic(topic: string): string {
   const t = topic.toLowerCase();
-  if (t.includes('bilangan') || t.includes('pecahan') || t.includes('fpb') || t.includes('kpk') || t.includes('pangkat')) {
-    return 'Bilangan';
+  if (t.includes('interaksi') || t.includes('dampak') || t.includes('ketergantungan') || t.includes('akuarium') || t.includes('taman') || t.includes('kebun')) {
+    return 'Interaksi Ekosistem';
   }
-  if (t.includes('lingkaran') || t.includes('bangun datar') || t.includes('kubus') || t.includes('geometri') || t.includes('layang')) {
-    return 'Geometri';
+  if (t.includes('abiotik') || t.includes('suhu') || t.includes('pantai')) {
+    return 'Komponen Abiotik';
   }
-  if (t.includes('debit') || t.includes('volume') || t.includes('kecepatan') || t.includes('jarak')) {
-    return 'Pengukuran';
+  if (t.includes('biotik') || t.includes('pengurai') || t.includes('dekomposer')) {
+    return 'Komponen Biotik';
   }
-  if (t.includes('skala') || t.includes('perbandingan') || t.includes('diskon') || t.includes('bruto') || t.includes('aritmatika')) {
-    return 'Aljabar';
-  }
-  if (t.includes('statistika') || t.includes('diagram') || t.includes('mean') || t.includes('modus') || t.includes('median')) {
-    return 'Analisis Data dan Peluang';
-  }
-  return 'Bilangan';
+  return 'Komponen Biotik';
 }
 
 function inferLevelFromDifficulty(diff: Difficulty): CognitiveLevel {

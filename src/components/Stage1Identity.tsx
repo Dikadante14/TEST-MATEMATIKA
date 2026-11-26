@@ -99,10 +99,11 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
       {/* Header Pengumuman Tes */}
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-          Tes Sumatif Matematika Kelas {CONFIG.KELAS}
+          Tes Sumatif {CONFIG.MATA_PELAJARAN} Kelas {CONFIG.KELAS}
         </h2>
-        <p className="mt-2 text-sm text-slate-600 max-w-xl mx-auto">
-          Materi Pokok: <span className="font-semibold text-slate-800">{CONFIG.MATERI}</span>.
+        <p className="mt-2 text-sm text-slate-600 max-w-2xl mx-auto">
+          Lingkup Materi: <span className="font-semibold text-slate-800">{CONFIG.MATERI}</span> •{' '}
+          KKTP: <span className="font-semibold text-blue-700">{CONFIG.KKTP_DESKRIPSI}</span>.
           Silakan lengkapi identitas Anda dengan benar sebelum memulai pengerjaan soal.
         </p>
       </div>

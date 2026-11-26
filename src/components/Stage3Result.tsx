@@ -162,7 +162,7 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
             )}
           </div>
           <p className="text-[11px] text-slate-500 mt-2">
-            Standar Kriteria Ketercapaian Tujuan Pembelajaran (KKTP): <span className="font-bold">{CONFIG.KKTP}</span>
+            KKTP ({CONFIG.KKTP}): <span className="font-bold">{CONFIG.KKTP_DESKRIPSI}</span>
           </p>
         </div>
 
@@ -261,6 +261,16 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
                       Kunci: {Array.isArray(q.correctAnswer) ? q.correctAnswer.join(', ') : q.correctAnswer || 'Sesuai Kategori'}
                     </span>
                   </div>
+                  {q.imageUrl && (
+                    <div className="rounded-lg overflow-hidden border border-slate-200 bg-white">
+                      <img
+                        src={q.imageUrl}
+                        alt={q.imageCaption || q.topic}
+                        referrerPolicy="no-referrer"
+                        className="w-full max-h-52 object-contain mx-auto"
+                      />
+                    </div>
+                  )}
                   <p className="text-slate-800">{q.text}</p>
                   <div className="p-2.5 rounded bg-blue-50/70 border border-blue-100 text-slate-700">
                     <span className="font-bold text-blue-900 block mb-0.5">Pembahasan:</span>
